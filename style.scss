@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Calistoga&display=swap');
+
+body,html{
+	overflow-x: hidden;
+}
+input,textarea{
+	display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+body{
+	background: #003E2F;
+	color: white;
+	a{
+		color: white;
+	}
+}
+footer{
+	a.tel{
+		font-size: 36px; 
+	}
+}
+.banner{
+	min-height: 100vh;
+	background: url(img/banner.png) no-repeat center center /cover;
+	.row{
+		min-height: 100vh;
+	}
+	@media screen and (max-width: 992px) {
+		background: none;
+	}
+	h2{
+		span{
+			color: #F5C662;
+			display: block;
+			padding: 5px 0;
+		}
+	}
+}
+.banner-secundario{
+	background:#0A2C23;
+}
+.button{
+	display: inline-block;
+	border-radius: 40px;
+	padding: 5px 20px;
+	background: #F5C662;
+	color:#003E2F;
+	border: none;
+	width: auto;
+}
+textarea{
+	background: rgba(255,255,255,0.5);
+	min-height: 150px;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	&:focus{
+		outline: none;
+		box-shadow: none;
+		background: rgba(255,255,255,0.5);
+	}
+}
+input{
+	border-radius: 50px;
+	background: rgba(255,255,255,0.5);
+	border: none;
+	color: white;
+	&:focus{
+		outline: none;
+		box-shadow: none;
+		background: rgba(255,255,255,0.5);
+	}
+}
+.item{
+	img{
+		max-width: 100px;
+		margin-bottom: 30px;
+	}
+	.text{
+		position: relative;
+		min-height: 200px;
+	}
+	h2.title{
+		position: absolute;
+		writing-mode: vertical-lr;
+		transform: rotate(180deg);
+		margin: 0;
+	}
+}
+.video-responsive {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder { /* Edge */
+  color: white;
+}
+
+input:-ms-input-placeholder,textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+input::placeholder,textarea::placeholder {
+  color: white;
+}
+ h2,h3,h4,h5,h6{
+ 	font-family: 'Calistoga', cursive;
+ }
+.under-line{
+	border-bottom: solid 4px white;
+}
+hr{
+	// color: ;
+	border-color: rgba(white,0.5);
+}
+.top{
+	margin-top: -50px;
+	position: relative;
+	z-index: 1;
+}
