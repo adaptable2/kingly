@@ -30,26 +30,33 @@
 					<h2 class="text-center">
 						¿Quieres tener una <span>Familia Real?</span>
 					</h2>
-					<form action="">
+					<form action="" id="register_form">
 						<div class="py-2">
-							<input type="text" placeholder="Nombre:">
+							<input type="text" placeholder="Nombre:" name="name">
 						</div>
 						<div class="py-2">
-							<input type="text" placeholder="E-mail:">
+							<input type="email" placeholder="E-mail:" name="email">
 						</div>
 						<div class="py-2">
-							<input type="text" placeholder="Celular:">
+							<input type="text" placeholder="Celular:" name="phone">
 						</div>
 						<div class="py-2">
-							<input type="text" placeholder="Ciudad:">
+							<input type="text" placeholder="Ciudad:" name="city">
 						</div>
 						<div class="py-2">
-							<textarea name="" id="" cols="30" rows="10" placeholder="Mensaje:"></textarea>
+							<textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje:"></textarea>
 						</div>
 						<div class="text-right">
-							<input type="submit" class="button d-inline-block">
+							<input id="submit" name="submit" type="submit" class="button d-inline-block">
 						</div>
 					</form>
+					<br />
+					<div class="alert alert-success alert-dismissible fade hidden" role="alert">
+		  			<strong>Gracias!</strong> Sus datos han sido guardados con exito!
+					</div>
+					<div class="alert alert-danger alert-dismissible fade hidden" role="alert">
+		  			<strong>Upss!</strong> Ha ocurrido un problema.
+					</div>
 				</div>
 			</div>
 		</div>
@@ -136,5 +143,7 @@
 	</footer>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/send.js"></script>
 </body>
 </html>
