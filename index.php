@@ -30,32 +30,29 @@
 					<h2 class="text-center">
 						¿Quieres tener una <span>Familia Real?</span>
 					</h2>
-					<form action="" id="register_form">
+					<form role="form" id="register_form">
 						<div class="py-2">
-							<input type="text" placeholder="Nombre:" name="name">
+							<input type="text" placeholder="Nombre:" name="name" pattern="^([a-zA-Z\s]{3,})$" required>
 						</div>
 						<div class="py-2">
-							<input type="email" placeholder="E-mail:" name="email">
+							<input type="email" placeholder="E-mail:" name="email" required>
 						</div>
 						<div class="py-2">
-							<input type="text" placeholder="Celular:" name="phone">
+							<input type="text" placeholder="Celular:" name="phone" required>
 						</div>
 						<div class="py-2">
-							<input type="text" placeholder="Ciudad:" name="city">
+							<input type="text" placeholder="Ciudad:" name="city" required>
 						</div>
 						<div class="py-2">
-							<textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje:"></textarea>
+							<textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje:" required></textarea>
 						</div>
 						<div class="text-right">
 							<input id="submit" name="submit" type="submit" class="button d-inline-block">
 						</div>
 					</form>
 					<br />
-					<div class="alert alert-success alert-dismissible fade hidden" role="alert">
-		  			<strong>Gracias!</strong> Sus datos han sido guardados con exito!
-					</div>
-					<div class="alert alert-danger alert-dismissible fade hidden" role="alert">
-		  			<strong>Upss!</strong> Ha ocurrido un problema.
+					<div class="alert alert-danger" role="alert">
+  					A ocurrido un error al guardar tu información.
 					</div>
 				</div>
 			</div>
@@ -144,6 +141,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/parsleyjs@2.9.1/dist/parsley.min.js"></script>
+	<script src="js/es.js"></script>
 	<script src="js/send.js"></script>
 </body>
 </html>
