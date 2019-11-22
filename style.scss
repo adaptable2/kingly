@@ -124,11 +124,55 @@ input::placeholder,textarea::placeholder {
 	border-bottom: solid 4px white;
 }
 hr{
-	// color: ;
 	border-color: rgba(white,0.5);
 }
 .top{
 	margin-top: -50px;
 	position: relative;
 	z-index: 1;
+}
+.gracias{
+	position: relative;
+	h1{
+		
+		padding-top: 20px;
+	}
+	h2{
+		color: silver;
+		padding-bottom: 20px;
+	}
+	.text-gracias{
+		a.btn{
+			background: #F5C662;
+			border-radius: 50px;
+			color:#003E2F;
+			font-weight: bold;
+			&:hover{
+				border:solid 1px white;
+				background: none;
+				color:#F5C662;
+			}
+		}
+		a.redes{
+			padding: 20px 5px;
+			&:hover{
+				color:#F5C662;
+			}
+		}
+	}
+	&:before {
+		content: "";
+	    top: 50%;
+	    right: 0;
+	    opacity: 1;
+	    width: 50%;
+	    height: 100%;
+	    display: none;
+	    position: absolute;
+	    transform: translateY(-50%);
+	    background: url(img/bg-gracias.png) no-repeat center right/contain;
+	    @media screen and (min-width: 768px) {
+	    	display: block;
+	    }
+	}
 }
