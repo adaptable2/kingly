@@ -28,11 +28,42 @@ $(document).ready(function() {
       success: function (response) { 
       //if process.php returned 1/true (send mail success)
         if (response == 1) {
-          $(location).attr('href','gracias.php');
+            $form.trigger("reset");
+            Swal.fire({
+              position: 'center',
+              icon: 'success',
+              title: 'Gracias por registrarse !',
+              showConfirmButton: false,
+              timer: 2000
+            }).then((result) => {
+              $.ajax({
+                // Cambiar por url final
+                url: 'http://localhost:8888/kingly/hotel.pdf',
+                method: 'GET',
+                xhrFields: {
+                    responseType: 'blob'
+                },
+                success: function (data) {
+                    var a = document.createElement('a');
+                    var url = window.URL.createObjectURL(data);
+                    a.href = url;
+                    a.download = 'file.pdf';
+                    document.body.append(a);
+                    a.click();
+                    a.remove();
+                    window.URL.revokeObjectURL(url);
+                }
+              });
+            });
         //if process.php returned 0/false
         } else {
-          $('.alert').fadeIn('slow');
-          $('.alert').fadeOut(5000);
+          Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'A ocurrido un error al guardar tu información.',
+            showConfirmButton: false,
+            timer: 2000
+          })
         }
       }
     });

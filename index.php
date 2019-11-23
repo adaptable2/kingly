@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Kingly bulldog</title>
-</head>
-<body>
-	<header class="py-4" id="top">
-		<div class="container">
-			<div class="row">
-				<div class="col-4">
-					<img src="img/logo.png" alt="" class="img-fluid">
-				</div>
-			</div>
-		</div>
-	</header>
+<?php include('includes/header.php'); ?>
 	<section class="banner mb-md-5">
 		<div class="container">
 			<div class="row">
@@ -43,10 +27,6 @@
 							<input id="submit" name="submit" type="submit" class="button d-inline-block">
 						</div>
 					</form>
-					<br />
-					<div class="alert alert-danger" role="alert">
-  					A ocurrido un error al guardar tu información.
-					</div>
 				</div>
 			</div>
 		</div>
@@ -121,23 +101,4 @@
 			</div>
 		</div>
 	</section>
-	<a href="https://api.whatsapp.com/send?phone=573007574599" class="wp" target="_blank">
-	</a>
-	<footer class="container">
-		<div class="row flex-row py-5 align-items-center justify-content-end">
-			<p class="m-0"><a href="tel:573007574599" class="tel">(+57) 300 757 45 99</a></p>
-			<ul class="redes m-0">
-				<li class="d-inline-block px-3"><a href=""><img src="img/ig.png" alt="" class="img-fluid"></a></li>
-				<li class="d-inline-block px-3"><a href=""><img src="img/fb.png" alt="" class="img-fluid"></a></li>
-				<li class="d-inline-block px-3"><a href=""><img src="img/Logo-Kingly.png" alt="" class="img-fluid"></a></li>
-			</ul>
-		</div>
-	</footer>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/parsleyjs@2.9.1/dist/parsley.min.js"></script>
-	<script src="js/es.js"></script>
-	<script src="js/send.js"></script>
-</body>
-</html>
+<?php include('includes/footer.php'); ?>
