@@ -15,13 +15,6 @@
 			</div>
 		</div>
 	</header>
-	<div class="container">
-		<div class="row">
-			<div class="col-12 text-right">
-				<h2><a href="tel:573007574599" class="tel">(+57) 300 757 45 99</a></h2>
-			</div>
-		</div>
-	</div>
 	<section class="banner mb-md-5">
 		<div class="container">
 			<div class="row">
@@ -128,6 +121,8 @@
 			</div>
 		</div>
 	</section>
+	<a href="https://api.whatsapp.com/send?phone=573007574599" class="wp" target="_blank">
+	</a>
 	<footer class="container">
 		<div class="row flex-row py-5 align-items-center justify-content-end">
 			<p class="m-0"><a href="tel:573007574599" class="tel">(+57) 300 757 45 99</a></p>
