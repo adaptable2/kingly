@@ -15,6 +15,5 @@
     echo $mysqli->error;
   }else{
     echo '1';
-    include 'sendMail';
   }
 ?>
