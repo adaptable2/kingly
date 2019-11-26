@@ -36,24 +36,8 @@ $(document).ready(function() {
               showConfirmButton: false,
               timer: 2000
             }).then((result) => {
-              $.ajax({
-                // Cambiar por url final
-                url: 'https://kinglybulldogs.com/landing/hotel.pdf',
-                method: 'GET',
-                xhrFields: {
-                    responseType: 'blob'
-                },
-                success: function (data) {
-                    var a = document.createElement('a');
-                    var url = window.URL.createObjectURL(data);
-                    a.href = url;
-                    a.download = 'file.pdf';
-                    document.body.append(a);
-                    a.click();
-                    a.remove();
-                    window.URL.revokeObjectURL(url);
-                }
-              });
+              let url = "https://kinglybulldogs.com/landing/hotel.pdf";
+              window.open(url, '_blank');
             });
         //if process.php returned 0/false
         } else {

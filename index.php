@@ -9,7 +9,7 @@
 					</h3>
 					<form role="form" id="register_form">
 						<div class="py-2">
-							<input type="text" placeholder="Nombre:" name="name" pattern="^([a-zA-Z\s]{3,})$" required>
+							<input type="text" placeholder="Nombre:" name="name" required>
 						</div>
 						<div class="py-2">
 							<input type="email" placeholder="E-mail:" name="email" required>
