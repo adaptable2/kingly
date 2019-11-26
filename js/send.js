@@ -38,7 +38,7 @@ $(document).ready(function() {
             }).then((result) => {
               $.ajax({
                 // Cambiar por url final
-                url: 'http://kinglybulldogs.com/landing/hotel.pdf',
+                url: 'https://kinglybulldogs.com/landing/hotel.pdf',
                 method: 'GET',
                 xhrFields: {
                     responseType: 'blob'
