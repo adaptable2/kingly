@@ -4,9 +4,9 @@
 			<div class="row">
 				<div class="col-12 d-block d-lg-none text-center"><img src="img/mb-banner.png" class="img-fluid d-inline-block "></div>
 				<div class="col-lg-3 d-flex flex-column justify-content-center p-md-0">
-					<h2 class="text-center">
-						¿Quieres tener una <span>Familia Real?</span>
-					</h2>
+					<h3 class="text-center">
+						Descarga gratis Ebook <span> "Bulldog Francés: Todo sobre esta raza"</span>
+					</h3>
 					<form role="form" id="register_form">
 						<div class="py-2">
 							<input type="text" placeholder="Nombre:" name="name" pattern="^([a-zA-Z\s]{3,})$" required>
@@ -24,7 +24,7 @@
 							<textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje:" required></textarea>
 						</div>
 						<div class="text-right">
-							<input id="submit" name="submit" type="submit" class="button d-inline-block">
+							<input id="submit" name="submit" type="submit" class="button d-inline-block" value="Descargar">
 						</div>
 					</form>
 				</div>
@@ -49,7 +49,7 @@
 						<h2 class="title">Hogar</h2>
 						<p class="pl-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam sapiente odit soluta vitae incidunt. Odio praesentium in eveniet repellendus suscipit sunt illum enim saepe adipisci placeat officia cumque, debitis iste?</p>
 					</div>
-					<a href="" class="align-self-end button">Información</a>
+					<!-- <a href="" class="align-self-end button">Información</a> -->
 				</div>
 				<div class="col-md-4 d-flex flex-column justify-content-center item pt-5">
 					<div class="text-center">
@@ -60,7 +60,7 @@
 						<h2 class="title">Juguetona</h2>
 						<p class="pl-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, iste id dignissimos officia, est, dolorum laudantium hic repellendus tenetur fugiat accusamus vero repudiandae nesciunt quidem doloribus minus saepe consequatur, excepturi.</p>
 					</div>
-					<a href="" class="align-self-end button">Información</a>
+					<!-- <a href="" class="align-self-end button">Información</a> -->
 				</div>
 				<div class="col-md-4 d-flex flex-column justify-content-center item pt-5">
 					<div class="text-center">
@@ -71,7 +71,7 @@
 						<h2 class="title">Mejor amigo</h2>
 						<p class="pl-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi officiis magni quidem deleniti, doloribus aut harum fugiat consequuntur, recusandae nulla delectus dolore, et in ullam ex repellendus optio eaque doloremque.</p>
 					</div>
-					<a href="" class="align-self-end button">Información</a>
+					<!-- <a href="" class="align-self-end button">Información</a> -->
 				</div>
 			</div>
 		</div>

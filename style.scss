@@ -19,20 +19,26 @@ body{
 	}
 }
 footer{
-	a.tel{
+	.tel{
 		font-size: 36px; 
+		@media screen and (max-width: 992px){
+			display: block;
+			text-align: center;
+			font-size: 26px;
+			padding: 10px 0;
+		}
 	}
 }
 .banner{
 	min-height: 100vh;
-	background: url(img/banner.png) no-repeat center center /cover;
+    background: url(img/banner.png) no-repeat calc(100% - 20%) center /700px;
 	.row{
 		min-height: 100vh;
 	}
 	@media screen and (max-width: 992px) {
 		background: none;
 	}
-	h2{
+	h3{
 		span{
 			color: #F5C662;
 			display: block;

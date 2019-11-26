@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `acreativa_kingly`
+-- Database: `kingly_form`
 --
 
 -- --------------------------------------------------------
@@ -40,9 +40,6 @@ CREATE TABLE `Person` (
 -- Dumping data for table `Person`
 --
 
-INSERT INTO `Person` (`id_person`, `name`, `email`, `phone`, `city`, `message`, `date_at`) VALUES
-(3, 'Jhonatan Vanegas', 'chuzas@rocketmail.com', '234234', 'Medellin', 'Test 1', '2019-11-22 13:40:38');
-
 --
 -- Indexes for dumped tables
 --
@@ -61,7 +58,7 @@ ALTER TABLE `Person`
 -- AUTO_INCREMENT for table `Person`
 --
 ALTER TABLE `Person`
-  MODIFY `id_person` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_person` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
